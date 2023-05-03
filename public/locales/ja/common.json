@@ -14,5 +14,8 @@
   "index": {
     "description": "Whalebirdはデスクトップ向けのFediverseクライアントです",
     "downloads": "ダウンロード"
+  },
+  "privacy_policy": {
+    "title": "プライバシーポリシー"
   }
 }

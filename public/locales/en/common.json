@@ -14,5 +14,8 @@
   "index": {
     "description": "Whalebird is a Fediverse client application for desktop",
     "downloads": "Downloads"
+  },
+  "privacy_policy": {
+    "title": "Privacy Policy"
   }
 }

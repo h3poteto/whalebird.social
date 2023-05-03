@@ -5,3 +5,11 @@
   text-align: center;
   padding: 18vh 0 12vh 0;
 }
+
+.titleheader {
+  background: url("/images/main_background.jpg") no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  text-align: center;
+  padding: 8vh 0 8vh 0;
+}
