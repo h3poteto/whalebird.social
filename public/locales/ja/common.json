@@ -20,5 +20,11 @@
   },
   "downloads": {
     "title": "ダウンロード"
+  },
+  "inquiry": {
+    "title": "お問い合わせ",
+    "email": "Email",
+    "body": "本文",
+    "submit": "送信"
   }
 }

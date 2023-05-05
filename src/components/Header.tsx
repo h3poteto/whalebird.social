@@ -14,7 +14,7 @@ export default function Header() {
           <Nav.Link href={`/${router.locale}/downloads`}>
             {t("menu.downloads")}
           </Nav.Link>
-          <Nav.Link href={`/${router.locale}/contacts`}>
+          <Nav.Link href={`/${router.locale}/inquiry`}>
             {t("menu.contacts")}
           </Nav.Link>
           <Nav.Link href={`/${router.locale}/privacy_policy`}>

@@ -20,5 +20,11 @@
   },
   "downloads": {
     "title": "Downloads"
+  },
+  "inquiry": {
+    "title": "Contact",
+    "email": "Email",
+    "body": "Body",
+    "submit": "Submit"
   }
 }
