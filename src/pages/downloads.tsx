@@ -11,6 +11,7 @@ import Header from "@/components/Header";
 import Link from "next/link";
 import { Octokit } from "@octokit/rest";
 import Image from "next/image";
+import Footer from "@/components/Footer";
 
 const octokit = new Octokit();
 const inter = Quicksand({ subsets: ["latin"] });
@@ -254,6 +255,7 @@ export default function Downloads(props: Props) {
             </div>
           </div>
         </Container>
+        <Footer />
       </main>
     </>
   );
