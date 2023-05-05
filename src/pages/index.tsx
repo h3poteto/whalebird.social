@@ -6,8 +6,6 @@ import { Button } from "react-bootstrap";
 
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
-import { InferGetStaticPropsType } from "next";
-import Link from "next/link";
 
 const inter = Quicksand({ subsets: ["latin"] });
 
