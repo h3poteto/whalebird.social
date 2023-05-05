@@ -3,6 +3,8 @@ import { Quicksand } from "@next/font/google";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { Button, Container } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClipboard } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
@@ -132,7 +134,10 @@ export default function Downloads(props: Props) {
                   variant="link"
                   onClick={() => copyClipboard("brew install --cask whalebird")}
                 >
-                  Copy
+                  <FontAwesomeIcon
+                    icon={faClipboard}
+                    style={{ color: "gray" }}
+                  />
                 </Button>
               </div>
               <Link
@@ -170,7 +175,10 @@ export default function Downloads(props: Props) {
                   variant="link"
                   onClick={() => copyClipboard("yay -S fedistar-bin")}
                 >
-                  Copy
+                  <FontAwesomeIcon
+                    icon={faClipboard}
+                    style={{ color: "gray" }}
+                  />
                 </Button>
               </div>
               <div
@@ -197,7 +205,10 @@ export default function Downloads(props: Props) {
                     )
                   }
                 >
-                  Copy
+                  <FontAwesomeIcon
+                    icon={faClipboard}
+                    style={{ color: "gray" }}
+                  />
                 </Button>
               </div>
               <Link
