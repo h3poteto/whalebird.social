@@ -6,6 +6,7 @@ import { Button } from "react-bootstrap";
 
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const inter = Quicksand({ subsets: ["latin"] });
 
@@ -36,6 +37,7 @@ export default function Home() {
           <h4 style={{ padding: "2vh" }}>{t("index.description")}</h4>
           <Button href="/downloads">{t("index.downloads")}</Button>
         </div>
+        <Footer />
       </main>
     </>
   );

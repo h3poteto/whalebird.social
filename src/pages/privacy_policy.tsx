@@ -7,6 +7,7 @@ import { Container } from "react-bootstrap";
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 
 const inter = Quicksand({ subsets: ["latin"] });
 
@@ -76,6 +77,7 @@ export default function PrivacyPolicy() {
             </p>
           </div>
         </Container>
+        <Footer />
       </main>
     </>
   );
