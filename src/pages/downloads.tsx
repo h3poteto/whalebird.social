@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Quicksand } from "@next/font/google";
+import { Quicksand } from "next/font/google";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { Button, Container } from "react-bootstrap";
