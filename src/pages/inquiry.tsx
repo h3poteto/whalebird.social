@@ -1,87 +1,90 @@
-import Head from "next/head";
-import { Quicksand } from "next/font/google";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
-import {
-  Button,
-  Container,
-  Form,
-  Toast,
-  ToastContainer,
-} from "react-bootstrap";
+import Head from 'next/head'
+import { Quicksand } from 'next/font/google'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
+import { Button, Container, Form, Toast, ToastContainer } from 'react-bootstrap'
 
-import styles from "@/styles/Home.module.css";
-import Header from "@/components/Header";
-import { useState } from "react";
+import styles from '@/styles/Home.module.css'
+import Header from '@/components/Header'
+import { useState } from 'react'
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3'
 
-const inter = Quicksand({ subsets: ["latin"] });
+const inter = Quicksand({ subsets: ['latin'] })
 
 type Props = {
-  locale: string;
-};
+  locale: string
+}
 
 export async function getStaticProps({ locale }: Props) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common"])),
-    },
-  };
+      ...(await serverSideTranslations(locale, ['common']))
+    }
+  }
 }
 
 export default function Inquiry() {
-  const [loading, setLoading] = useState(false);
-  const [email, setEmail] = useState("");
-  const [body, setBody] = useState("");
-  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false)
+  const [email, setEmail] = useState('')
+  const [body, setBody] = useState('')
+  const [error, setError] = useState<string | null>(null)
 
-  const { t } = useTranslation();
+  const { t } = useTranslation()
+  const { executeRecaptcha } = useGoogleReCaptcha()
 
   const handleSubmit = async (event: any) => {
-    event.preventDefault();
+    event.preventDefault()
 
-    if (loading) return false;
+    if (loading) return false
+    if (executeRecaptcha === undefined) return false
 
-    setLoading(true);
+    setLoading(true)
     try {
+      const token = await executeRecaptcha('Contact')
+
       const formValue = {
         email: email,
-        message: body,
-      };
+        message: body
+      }
       const options = {
-        method: "POST",
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formValue),
-      };
+        body: JSON.stringify(
+          Object.assign({}, formValue, {
+            token: token
+          })
+        )
+      }
 
-      const response = await fetch("/api/inquiry", options);
-      const result = await response.json();
+      const response = await fetch('/api/inquiry', options)
+      const result = await response.json()
       if (response.status === 200) {
-        console.debug(result);
-        clear();
+        console.debug(result)
+        clear()
       } else {
-        setError("Failed to send message");
+        setError('Failed to send message')
       }
     } catch (err) {
-      console.error(err);
-      setError("Failed to send message");
+      console.error(err)
+      setError('Failed to send message')
     } finally {
-      setLoading(false);
+      setLoading(false)
     }
-    return false;
-  };
+    return false
+  }
 
   const clear = () => {
-    setEmail("");
-    setBody("");
-    setError(null);
-  };
+    setEmail('')
+    setBody('')
+    setError(null)
+  }
 
   return (
     <>
       <Head>
-        <title>{t("inquiry.title")}</title>
+        <title>{t('inquiry.title')}</title>
       </Head>
       <main className={inter.className}>
         <Header />
@@ -91,36 +94,26 @@ export default function Inquiry() {
           </Toast>
         </ToastContainer>
         <div className={styles.titleheader}>
-          <h1>{t("inquiry.title")}</h1>
+          <h1>{t('inquiry.title')}</h1>
         </div>
         <Container>
-          <div style={{ marginTop: "4vh" }}>
+          <div style={{ marginTop: '4vh' }}>
             <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="email">
-                <Form.Label>{t("inquiry.email")}</Form.Label>
-                <Form.Control
-                  type="email"
-                  placeholder="contact@example.com"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
+                <Form.Label>{t('inquiry.email')}</Form.Label>
+                <Form.Control type="email" placeholder="contact@example.com" value={email} onChange={e => setEmail(e.target.value)} />
               </Form.Group>
               <Form.Group className="mb-3" controlId="body">
-                <Form.Label>{t("inquiry.body")}</Form.Label>
-                <Form.Control
-                  as="textarea"
-                  rows={3}
-                  value={body}
-                  onChange={(e) => setBody(e.target.value)}
-                />
+                <Form.Label>{t('inquiry.body')}</Form.Label>
+                <Form.Control as="textarea" rows={3} value={body} onChange={e => setBody(e.target.value)} />
               </Form.Group>
               <Button type="submit" disabled={loading}>
-                {t("inquiry.submit")}
+                {t('inquiry.submit')}
               </Button>
             </Form>
           </div>
         </Container>
       </main>
     </>
-  );
+  )
 }
