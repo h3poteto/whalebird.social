@@ -13,3 +13,7 @@
   text-align: center;
   padding: 8vh 0 8vh 0;
 }
+
+.fedistar a {
+  text-decoration: none;
+}

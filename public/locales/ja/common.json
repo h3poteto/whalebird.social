@@ -12,8 +12,46 @@
     }
   },
   "index": {
-    "description": "Whalebirdはデスクトップ向けのFediverseクライアントです",
-    "downloads": "ダウンロード"
+    "short_description": "Whalebirdはデスクトップ向けのFediverseクライアントです",
+    "downloads": "ダウンロード",
+    "features": {
+      "desktop_notifications": "デスクトップ通知",
+      "streamings": "ストリーミング更新",
+      "many_shortcuts": "豊富なショートカット"
+    },
+    "description": {
+      "home": {
+        "title": "Slack風のUI",
+        "body": "Slack風のUIで複数アカウントの切り替えも可能に。タイムラインはストリーミング更新され、デスクトップ通知も可能。"
+      },
+      "jump": {
+        "title": "豊富なショートカット",
+        "body": "豊富なショートカットでクライアントを操作可能。ジャンプ機能(Ctrl + k)によって他のタイムラインへのジャンプも実現しました。"
+      },
+      "theme": {
+        "title": "豊富なカラーテーマ",
+        "body": "Mastodonらしい黒背景のテーマの他複数のテーマを用意してあります。それらのカラーテーマをカスタマイズすることもできます。また小さい画面サイズ向けにサイドメニューを折りたたむことも可能。"
+      },
+      "supporting": {
+        "title": "サポートしているSNS"
+      },
+      "filter": {
+        "title": "フィルター",
+        "body": "タイムラインのフィルタリング機能も実装されています。任意の正規表現でタイムラインをフィルタリング可能。"
+      },
+      "proxy": {
+        "title": "プロキシをサポート",
+        "body": "主要なブラウザと同じくプロキシを利用することができます。OSで設定されたプロキシをそのまま利用することも、Whalebirdのみに特定のプロキシを設定することも可能です。"
+      }
+    },
+    "fedistar": {
+      "title": "マルチカラムがお好みの方へ",
+      "description": "もしマルチカラムのクライアントを探しているなら"
+    },
+    "donate": {
+      "title": "スポンサー",
+      "description": "Whalebirdは無料のアプリケーションです。広告等によるマネタイズも行っておりません。みなさんの寄付により成り立っています。"
+    }
   },
   "privacy_policy": {
     "title": "プライバシーポリシー"
