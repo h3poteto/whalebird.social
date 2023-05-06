@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBell, faComments, faKeyboard } from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const inter = Quicksand({ subsets: ['latin'] })
 
@@ -28,6 +29,7 @@ export async function getStaticProps({ locale }: Props) {
 
 export default function Home() {
   const { t } = useTranslation()
+  const router = useRouter()
 
   return (
     <>
@@ -39,7 +41,7 @@ export default function Home() {
         <div className={styles.main}>
           <h1>{t('title')}</h1>
           <h4 style={{ padding: '2vh' }}>{t('index.short_description')}</h4>
-          <Button href="/downloads">{t('index.downloads')}</Button>
+          <Button href={`/${router.locale}/downloads`}>{t('index.downloads')}</Button>
         </div>
         <div style={{ backgroundColor: '#ececec' }}>
           <Container>
