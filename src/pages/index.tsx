@@ -164,7 +164,19 @@ export default function Home() {
           <Container>
             <h3>{t('index.donate.title')}</h3>
             <p>{t('index.donate.description')}</p>
-            <Button href="https://github.com/sponsors/h3poteto">GitHub Sponsor</Button>
+            <div>
+              <Button href="https://github.com/sponsors/h3poteto">GitHub Sponsor</Button>
+            </div>
+            <div style={{ marginTop: '1vh' }}>
+              <Button href="https://www.patreon.com/h3poteto" style={{ backgroundColor: '#FF424D', border: 'none', padding: '12px 24px' }}>
+                <Image src="/images/patreon.png" alt="Patreon" width={108} height={22} />
+              </Button>
+            </div>
+            <div style={{ marginTop: '1vh' }}>
+              <Button href="https://liberapay.com/h3poteto" variant="link" style={{ padding: 0 }}>
+                <Image src="/images/liberapay.png" alt="Liberapay" width={128} height={56} />
+              </Button>
+            </div>
           </Container>
         </div>
         <Footer />
