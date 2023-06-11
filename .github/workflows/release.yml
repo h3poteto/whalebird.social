@@ -81,7 +81,7 @@ jobs:
           cd k8s-services
           git init
           git checkout -b update-whalebirdsocial-image-${{ github.sha }}
-          cd external-prd/whalebirdsocial
+          cd external-prd/services/whalebirdsocial
           kustomize edit set image "nextjs=${{ env.ECR }}:sha-${{ github.sha }}"
           git add .
           git commit -m "Update docker image for whalebirdsocial to ${{ github.sha }}"
