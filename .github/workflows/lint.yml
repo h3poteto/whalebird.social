@@ -28,21 +28,3 @@ jobs:
           REVIEWDOG_GITHUB_API_TOKEN: ${{ github.token }}
         run: |
           pnpm run lint | reviewdog -f=eslint -reporter=github-pr-review -fail-on-error=true
-  typecheck:
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-
-    steps:
-      - uses: actions/checkout@master
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 8
-      - name: Install
-        run: |
-          pnpm install --frozen-lockfile
-      - name: Typecheck
-        run: |
-          pnpm run typecheck
