@@ -81,7 +81,8 @@ export default function Home() {
                 <ul style={{ margin: '2vh 0' }}>
                   <li>Mastodon</li>
                   <li>Pleroma</li>
-                  <li>Misskey</li>
+                  <li>Friendica</li>
+                  <li>Firefish</li>
                 </ul>
               </Col>
               <Col>
