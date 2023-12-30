@@ -51,8 +51,8 @@ dependencies:
     specifier: 18.2.0
     version: 18.2.0
   react-bootstrap:
-    specifier: ^2.9.1
-    version: 2.9.1(@types/react@18.2.42)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^2.9.2
+    version: 2.9.2(@types/react@18.2.42)(react-dom@18.2.0)(react@18.2.0)
   react-dom:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
@@ -621,10 +621,6 @@ packages:
       tslib: 2.5.0
     dev: false
 
-  /@popperjs/core@2.11.7:
-    resolution: {integrity: sha512-Cr4OjIkipTtcXKjAsm8agyleBuDHvxzeBoa1v543lbv1YaIwQjESsVcmjiWiPEbC1FIeHOG/Op9kdCmAmiS3Kw==}
-    dev: false
-
   /@popperjs/core@2.11.8:
     resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
     dev: false
@@ -654,7 +650,7 @@ packages:
       react-dom: '>=16.14.0'
     dependencies:
       '@babel/runtime': 7.23.5
-      '@popperjs/core': 2.11.7
+      '@popperjs/core': 2.11.8
       '@react-aria/ssr': 3.6.0(react@18.2.0)
       '@restart/hooks': 0.4.9(react@18.2.0)
       '@types/warning': 3.0.0
@@ -2385,8 +2381,8 @@ packages:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: false
 
-  /react-bootstrap@2.9.1(@types/react@18.2.42)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-ezgmh/ARCYp18LbZEqPp0ppvy+ytCmycDORqc8vXSKYV3cer4VH7OReV8uMOoKXmYzivJTxgzGHalGrHamryHA==}
+  /react-bootstrap@2.9.2(@types/react@18.2.42)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-a36B+EHsAI/aH+ZhXNILBFnqscE3zr10dWmjBmfhIb2QR7KSXJiGzYd6Faf/25G8G7/CP9TCL2B0WhUBOD2UBQ==}
     peerDependencies:
       '@types/react': '>=16.14.8'
       react: '>=16.14.0'
