@@ -45,8 +45,8 @@ dependencies:
     specifier: 13.5.6
     version: 13.5.6(react-dom@18.2.0)(react@18.2.0)
   next-i18next:
-    specifier: ^13.2.2
-    version: 13.2.2(i18next@23.7.13)(next@13.5.6)(react-i18next@12.2.2)(react@18.2.0)
+    specifier: ^15.2.0
+    version: 15.2.0(i18next@23.7.13)(next@13.5.6)(react-i18next@12.2.2)(react@18.2.0)
   react:
     specifier: 18.2.0
     version: 18.2.0
@@ -678,8 +678,8 @@ packages:
       tslib: 2.5.0
     dev: false
 
-  /@types/hoist-non-react-statics@3.3.1:
-    resolution: {integrity: sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==}
+  /@types/hoist-non-react-statics@3.3.5:
+    resolution: {integrity: sha512-SbcrWzkKBw2cdwRTwQAswfpB9g9LJWfjtUeW/jvNwbhC8cpmmNYVePa+ncbUe0rGTQ7G3Ff6mYUN2VMfLVr+Sg==}
     dependencies:
       '@types/react': 18.2.46
       hoist-non-react-statics: 3.3.2
@@ -1956,8 +1956,8 @@ packages:
       void-elements: 3.1.0
     dev: false
 
-  /i18next-fs-backend@2.1.1:
-    resolution: {integrity: sha512-FTnj+UmNgT3YRml5ruRv0jMZDG7odOL/OP5PF5mOqvXud2vHrPOOs68Zdk6iqzL47cnnM0ZVkK2BAvpFeDJToA==}
+  /i18next-fs-backend@2.3.1:
+    resolution: {integrity: sha512-tvfXskmG/9o+TJ5Fxu54sSO5OkY6d+uMn+K6JiUGLJrwxAVfer+8V3nU8jq3ts9Pe5lXJv4b1N7foIjJ8Iy2Gg==}
     dev: false
 
   /i18next@23.7.13:
@@ -2355,21 +2355,21 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: false
 
-  /next-i18next@13.2.2(i18next@23.7.13)(next@13.5.6)(react-i18next@12.2.2)(react@18.2.0):
-    resolution: {integrity: sha512-t0WU6K+HJoq2nVQ0n6OiiEZja9GyMqtDSU74FmOafgk4ljns+iZ18bsNJiI8rOUXfFfkW96ea1N7D5kbMyT+PA==}
+  /next-i18next@15.2.0(i18next@23.7.13)(next@13.5.6)(react-i18next@12.2.2)(react@18.2.0):
+    resolution: {integrity: sha512-Rl5yZ4oGffsB0AjRykZ5PzNQ2M6am54MaMayldGmH/UKZisrIxk2SKEPJvaHhKlWe1qgdNi2FkodwK8sEjfEmg==}
     engines: {node: '>=14'}
     peerDependencies:
-      i18next: ^22.0.6
+      i18next: '>= 23.7.13'
       next: '>= 12.0.0'
       react: '>= 17.0.2'
-      react-i18next: ^12.2.0
+      react-i18next: '>= 13.5.0'
     dependencies:
-      '@babel/runtime': 7.21.5
-      '@types/hoist-non-react-statics': 3.3.1
+      '@babel/runtime': 7.23.5
+      '@types/hoist-non-react-statics': 3.3.5
       core-js: 3.30.1
       hoist-non-react-statics: 3.3.2
       i18next: 23.7.13
-      i18next-fs-backend: 2.1.1
+      i18next-fs-backend: 2.3.1
       next: 13.5.6(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-i18next: 12.2.2(i18next@23.7.13)(react-dom@18.2.0)(react@18.2.0)
