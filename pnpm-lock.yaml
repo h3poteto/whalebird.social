@@ -46,7 +46,7 @@ dependencies:
     version: 13.5.6(react-dom@18.2.0)(react@18.2.0)
   next-i18next:
     specifier: ^15.2.0
-    version: 15.2.0(i18next@23.7.13)(next@13.5.6)(react-i18next@12.2.2)(react@18.2.0)
+    version: 15.2.0(i18next@23.7.13)(next@13.5.6)(react-i18next@12.3.1)(react@18.2.0)
   react:
     specifier: 18.2.0
     version: 18.2.0
@@ -60,8 +60,8 @@ dependencies:
     specifier: ^1.10.1
     version: 1.10.1(react-dom@18.2.0)(react@18.2.0)
   react-i18next:
-    specifier: ^12.2.2
-    version: 12.2.2(i18next@23.7.13)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^12.3.1
+    version: 12.3.1(i18next@23.7.13)(react-dom@18.2.0)(react@18.2.0)
   sharp:
     specifier: ^0.33.1
     version: 0.33.1
@@ -74,13 +74,6 @@ packages:
   /@aashutoshrathi/word-wrap@1.2.6:
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
     engines: {node: '>=0.10.0'}
-    dev: false
-
-  /@babel/runtime@7.21.5:
-    resolution: {integrity: sha512-8jI69toZqqcsnqGGqwGS4Qb1VwLOEp4hz+CXPywcvjs60u3B4Pom/U/7rm4W8tMOYEB+E9wgD0mW1l3r8qlI9Q==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      regenerator-runtime: 0.13.11
     dev: false
 
   /@babel/runtime@7.23.5:
@@ -2332,7 +2325,7 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: false
 
-  /next-i18next@15.2.0(i18next@23.7.13)(next@13.5.6)(react-i18next@12.2.2)(react@18.2.0):
+  /next-i18next@15.2.0(i18next@23.7.13)(next@13.5.6)(react-i18next@12.3.1)(react@18.2.0):
     resolution: {integrity: sha512-Rl5yZ4oGffsB0AjRykZ5PzNQ2M6am54MaMayldGmH/UKZisrIxk2SKEPJvaHhKlWe1qgdNi2FkodwK8sEjfEmg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -2349,7 +2342,7 @@ packages:
       i18next-fs-backend: 2.3.1
       next: 13.5.6(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
-      react-i18next: 12.2.2(i18next@23.7.13)(react-dom@18.2.0)(react@18.2.0)
+      react-i18next: 12.3.1(i18next@23.7.13)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
   /next@13.5.6(react-dom@18.2.0)(react@18.2.0):
@@ -2658,8 +2651,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /react-i18next@12.2.2(i18next@23.7.13)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-KBB6buBmVKXUWNxXHdnthp+38gPyBT46hJCAIQ8rX19NFL/m2ahte2KARfIDf2tMnSAL7wwck6eDOd/9zn6aFg==}
+  /react-i18next@12.3.1(i18next@23.7.13)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-5v8E2XjZDFzK7K87eSwC7AJcAkcLt5xYZ4+yTPDAW1i7C93oOY1dnr4BaQM7un4Hm+GmghuiPvevWwlca5PwDA==}
     peerDependencies:
       i18next: '>= 19.0.0'
       react: '>= 16.8.0'
@@ -2671,7 +2664,7 @@ packages:
       react-native:
         optional: true
     dependencies:
-      '@babel/runtime': 7.21.5
+      '@babel/runtime': 7.23.5
       html-parse-stringify: 3.0.1
       i18next: 23.7.13
       react: 18.2.0
@@ -2717,10 +2710,6 @@ packages:
       get-intrinsic: 1.2.2
       globalthis: 1.0.3
       which-builtin-type: 1.1.3
-    dev: false
-
-  /regenerator-runtime@0.13.11:
-    resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
     dev: false
 
   /regenerator-runtime@0.14.0:
