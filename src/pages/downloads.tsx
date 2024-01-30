@@ -27,6 +27,7 @@ type Props = {
     dmg: ReleaseData | null
     rpm: ReleaseData | null
     tar: ReleaseData | null
+    arm64: ReleaseData | null
     appImage: ReleaseData | null
     deb: ReleaseData | null
   }
@@ -44,6 +45,7 @@ export async function getStaticProps({ locale }: Props) {
     dmg: assets.find(asset => asset.name.includes('dmg')),
     rpm: assets.find(asset => asset.name.includes('rpm')),
     tar: assets.find(asset => asset.name.includes('x64.tar.bz2')),
+    arm64: assets.find(asset => asset.name.includes('arm64.tar.bz2')),
     appImage: assets.find(asset => asset.name.includes('AppImage')),
     deb: assets.find(asset => asset.name.includes('deb'))
   }
@@ -68,6 +70,12 @@ export async function getStaticProps({ locale }: Props) {
           ? {
               url: assetPerPlatforms.tar.browser_download_url,
               name: assetPerPlatforms.tar.name
+            }
+          : null,
+        arm64: assetPerPlatforms.arm64
+          ? {
+              url: assetPerPlatforms.arm64.browser_download_url,
+              name: assetPerPlatforms.arm64.name
             }
           : null,
         appImage: assetPerPlatforms.appImage
@@ -205,6 +213,11 @@ export default function Downloads(props: Props) {
               {props.release.tar && (
                 <div style={{ marginTop: '1vh' }}>
                   <Button href={props.release.tar.url}>{props.release.tar.name}</Button>
+                </div>
+              )}
+              {props.release.arm64 && (
+                <div style={{ marginTop: '1vh' }}>
+                  <Button href={props.release.arm64.url}>{props.release.arm64.name}</Button>
                 </div>
               )}
             </div>
