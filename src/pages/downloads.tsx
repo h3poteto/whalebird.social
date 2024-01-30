@@ -83,7 +83,8 @@ export async function getStaticProps({ locale }: Props) {
             }
           : null
       }
-    }
+    },
+    revalidate: 60
   }
 }
 
