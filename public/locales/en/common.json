@@ -17,7 +17,7 @@
     "features": {
       "desktop_notifications": "Desktop Notifications",
       "streamings": "Streamings",
-      "many_shortcuts": "Many Shortcuts"
+      "many_sns": "Support many SNS"
     },
     "description": {
       "home": {
