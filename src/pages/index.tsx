@@ -8,7 +8,7 @@ import styles from '@/styles/Home.module.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBell, faComments, faKeyboard } from '@fortawesome/free-solid-svg-icons'
+import { faBell, faComments, faGlobe } from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -65,9 +65,9 @@ export default function Home() {
               <Col>
                 <div style={{ textAlign: 'center', padding: '4vh' }}>
                   <p style={{ fontSize: '64px' }}>
-                    <FontAwesomeIcon icon={faKeyboard} />
+                    <FontAwesomeIcon icon={faGlobe} />
                   </p>
-                  <h4>{t('index.features.many_shortcuts')}</h4>
+                  <h4>{t('index.features.many_sns')}</h4>
                 </div>
               </Col>
             </Row>
@@ -87,52 +87,19 @@ export default function Home() {
               </Col>
               <Col>
                 <div style={{ position: 'relative', width: '600px', height: '360px' }}>
-                  <Image src="/images/screenshot/tag.png" alt="List" fill style={{ objectFit: 'contain' }} />
+                  <Image src="/images/screenshot/home.png" alt="List" fill style={{ objectFit: 'contain' }} />
                 </div>
               </Col>
             </Row>
             <Row style={{ margin: '4vh 0' }}>
               <Col>
                 <div style={{ position: 'relative', width: '600px', height: '360px' }}>
-                  <Image src="/images/screenshot/home.png" alt="Home" fill style={{ objectFit: 'contain' }} />
+                  <Image src="/images/screenshot/thread.png" alt="Home" fill style={{ objectFit: 'contain' }} />
                 </div>
               </Col>
               <Col>
                 <h3>{t('index.description.home.title')}</h3>
                 <p style={{ margin: '2vh 0' }}>{t('index.description.home.body')}</p>
-              </Col>
-            </Row>
-            <Row style={{ margin: '4vh 0' }}>
-              <Col>
-                <h3>{t('index.description.jump.title')}</h3>
-                <p style={{ margin: '2vh 0' }}>{t('index.description.jump.body')}</p>
-              </Col>
-              <Col>
-                <div style={{ position: 'relative', width: '600px', height: '360px' }}>
-                  <Image src="/images/screenshot/jump.png" alt="Jump" fill style={{ objectFit: 'contain' }} />
-                </div>
-              </Col>
-            </Row>
-            <Row style={{ margin: '4vh 0' }}>
-              <Col>
-                <div style={{ position: 'relative', width: '600px', height: '360px' }}>
-                  <Image src="/images/screenshot/dark.png" alt="Dark" fill style={{ objectFit: 'contain' }} />
-                </div>
-              </Col>
-              <Col>
-                <h3>{t('index.description.theme.title')}</h3>
-                <p style={{ margin: '2vh 0' }}>{t('index.description.theme.body')}</p>
-              </Col>
-            </Row>
-            <Row style={{ margin: '4vh 0' }}>
-              <Col>
-                <h3>{t('index.description.proxy.title')}</h3>
-                <p style={{ margin: '2vh 0' }}>{t('index.description.proxy.body')}</p>
-              </Col>
-              <Col>
-                <div style={{ position: 'relative', width: '600px', height: '360px' }}>
-                  <Image src="/images/screenshot/network.png" alt="Network" fill style={{ objectFit: 'contain' }} />
-                </div>
               </Col>
             </Row>
           </Container>
