@@ -30,7 +30,7 @@
       },
       "theme": {
         "title": "Many color themes",
-        "body": "You can choose the dark theme like Mastodon web and other color themes. You can customize the color theme as you like. And if your screen is narrow, you can collapse the side menu."
+        "body": "You can choose the dark theme like Mastodon web and other color themes. And if your screen is narrow, the side menu will be collapsed."
       },
       "tag": {
         "title": "Hashtag and Lists",
