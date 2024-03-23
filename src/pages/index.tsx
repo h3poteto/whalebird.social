@@ -102,6 +102,17 @@ export default function Home() {
                 <p style={{ margin: '2vh 0' }}>{t('index.description.home.body')}</p>
               </Col>
             </Row>
+            <Row style={{ margin: '4vh 0' }}>
+              <Col>
+                <h3>{t('index.description.theme.title')}</h3>
+                <p style={{ margin: '2vh 0' }}>{t('index.description.theme.body')}</p>
+              </Col>
+              <Col>
+                <div style={{ position: 'relative', width: '600px', height: '360px' }}>
+                  <Image src="/images/screenshot/dark.png" alt="Dark" fill style={{ objectFit: 'contain' }} />
+                </div>
+              </Col>
+            </Row>
           </Container>
         </div>
         <div className={styles.fedistar} style={{ padding: '8vh 0', borderTop: '1px solid #ececec', textAlign: 'center' }}>
