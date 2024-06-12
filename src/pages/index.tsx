@@ -83,6 +83,7 @@ export default function Home() {
                   <li>Pleroma</li>
                   <li>Friendica</li>
                   <li>Firefish</li>
+                  <li>Gotosocial</li>
                 </ul>
               </Col>
               <Col>
