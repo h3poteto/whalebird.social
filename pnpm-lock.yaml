@@ -51,8 +51,8 @@ dependencies:
     specifier: 18.3.1
     version: 18.3.1
   react-bootstrap:
-    specifier: ^2.10.3
-    version: 2.10.3(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1)
+    specifier: ^2.10.4
+    version: 2.10.4(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1)
   react-dom:
     specifier: 18.3.1
     version: 18.3.1(react@18.3.1)
@@ -2524,8 +2524,8 @@ packages:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: false
 
-  /react-bootstrap@2.10.3(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-cc1KAaQyj6Gr3AfA0eRRiUMSlRi3brDVcjc/o0E9y9XNW7ISo8TITrq8G8G3QTFe7VIhCiDt38k99AEFoLOolw==}
+  /react-bootstrap@2.10.4(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-W3398nBM2CBfmGP2evneEO3ZZwEMPtHs72q++eNw60uDGDAdiGn0f9yNys91eo7/y8CTF5Ke1C0QO8JFVPU40Q==}
     peerDependencies:
       '@types/react': '>=16.14.8'
       react: '>=16.14.0'
