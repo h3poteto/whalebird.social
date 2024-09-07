@@ -174,24 +174,6 @@ export default function Downloads(props: Props) {
                   <FontAwesomeIcon icon={faClipboard} style={{ color: 'gray' }} />
                 </Button>
               </div>
-              <div
-                style={{
-                  backgroundColor: 'var(--bs-gray-dark)',
-                  color: 'var(--bs-gray-300)',
-                  width: '540px',
-                  padding: '8px 0 8px 12px',
-                  borderRadius: '4px',
-                  margin: '8px 0',
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'center'
-                }}
-              >
-                <span>$ flatpak install flathub social.whalebird.WhalebirdDesktop</span>
-                <Button variant="link" onClick={() => copyClipboard('flatpak install flathub social.whalebird.WhalebirdDesktop')}>
-                  <FontAwesomeIcon icon={faClipboard} style={{ color: 'gray' }} />
-                </Button>
-              </div>
               <Link href="https://snapcraft.io/whalebird" target="_blank" rel="noopener noreferrer">
                 <Image src="/images/snap-store.svg" alt="Download from Snap Store" width={156} height={48} />
               </Link>
