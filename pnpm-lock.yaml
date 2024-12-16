@@ -18,8 +18,8 @@ dependencies:
     specifier: ^21.0.2
     version: 21.0.2
   '@types/node':
-    specifier: 22.9.4
-    version: 22.9.4
+    specifier: 22.10.2
+    version: 22.10.2
   '@types/react':
     specifier: 18.3.17
     version: 18.3.17
@@ -735,10 +735,10 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: false
 
-  /@types/node@22.9.4:
-    resolution: {integrity: sha512-d9RWfoR7JC/87vj7n+PVTzGg9hDyuFjir3RxUHbjFSKNd9mpxbxwMEyaCim/ddCmy4IuW7HjTzF3g9p3EtWEOg==}
+  /@types/node@22.10.2:
+    resolution: {integrity: sha512-Xxr6BBRCAOQixvonOye19wnzyDiUtTeqldOOmj3CkeblonbccA12PFwlufvRdrpjXxqnmUaeiU5EOA+7s5diUQ==}
     dependencies:
-      undici-types: 6.19.8
+      undici-types: 6.20.0
     dev: false
 
   /@types/prop-types@15.7.14:
@@ -3217,8 +3217,8 @@ packages:
       react: 18.3.1
     dev: false
 
-  /undici-types@6.19.8:
-    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
+  /undici-types@6.20.0:
+    resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
     dev: false
 
   /universal-user-agent@7.0.2:
