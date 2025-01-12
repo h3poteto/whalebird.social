@@ -84,6 +84,7 @@ export default function Home() {
                   <li>Friendica</li>
                   <li>Firefish</li>
                   <li>Gotosocial</li>
+                  <li>Pixelfed</li>
                 </ul>
               </Col>
               <Col>
