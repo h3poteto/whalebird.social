@@ -18,7 +18,7 @@
     "@types/node": "22.17.2",
     "@types/react": "19.1.11",
     "@types/react-dom": "19.1.7",
-    "bootstrap": "^5.3.7",
+    "bootstrap": "^5.3.8",
     "emailjs": "^4.0.3",
     "eslint": "9.33.0",
     "eslint-config-next": "15.4.7",
