@@ -31,6 +31,6 @@
     "react-google-recaptcha-v3": "^1.11.0",
     "react-i18next": "^15.6.1",
     "sharp": "^0.34.4",
-    "typescript": "5.9.2"
+    "typescript": "5.9.3"
   }
 }
