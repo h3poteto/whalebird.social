@@ -22,7 +22,7 @@
     "emailjs": "^4.0.3",
     "eslint": "9.33.0",
     "eslint-config-next": "15.5.9",
-    "i18next": "^25.6.0",
+    "i18next": "^25.7.2",
     "next": "15.5.9",
     "next-i18next": "^15.4.3",
     "react": "19.2.3",
