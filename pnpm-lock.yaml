@@ -33,8 +33,8 @@ importers:
         specifier: ^5.3.8
         version: 5.3.8(@popperjs/core@2.11.8)
       emailjs:
-        specifier: ^4.0.3
-        version: 4.0.3(typescript@5.9.3)
+        specifier: ^5.0.0
+        version: 5.0.0(typescript@5.9.3)
       eslint:
         specifier: 9.39.2
         version: 9.39.2
@@ -805,11 +805,11 @@ packages:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
 
-  emailjs@4.0.3:
-    resolution: {integrity: sha512-1CDXoE3FxkSg7QRTlLsDCYG9elFNu/JQsYWu3Xfrk77ubbg5zYgFGg+JRUKQJ56mceM8o3rHHX0VB4wo9XsyLQ==}
-    engines: {node: '>=12'}
+  emailjs@5.0.0:
+    resolution: {integrity: sha512-J7gxswcLGRZQM+HQBgll0DJuEMFiJIa7UzgK3GsjlytyRS4X2z7K1brQLlezEs3ul+jqvYYoCTqPAgWrVZf0mw==}
+    engines: {node: '>=18'}
     peerDependencies:
-      typescript: '>=4.3.5'
+      typescript: '>=5.0.0'
     peerDependenciesMeta:
       typescript:
         optional: true
@@ -2541,7 +2541,7 @@ snapshots:
       es-errors: 1.3.0
       gopd: 1.2.0
 
-  emailjs@4.0.3(typescript@5.9.3):
+  emailjs@5.0.0(typescript@5.9.3):
     optionalDependencies:
       typescript: 5.9.3
 
