@@ -16,7 +16,7 @@
     "@fortawesome/react-fontawesome": "^3.1.1",
     "@octokit/rest": "^22.0.1",
     "@types/node": "24.10.7",
-    "@types/react": "19.2.9",
+    "@types/react": "19.2.10",
     "@types/react-dom": "19.2.3",
     "bootstrap": "^5.3.8",
     "emailjs": "^5.0.0",
