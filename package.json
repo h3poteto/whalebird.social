@@ -20,7 +20,7 @@
     "@types/react-dom": "19.2.3",
     "bootstrap": "^5.3.8",
     "emailjs": "^5.0.0",
-    "eslint": "9.39.3",
+    "eslint": "10.0.1",
     "eslint-config-next": "16.1.6",
     "i18next": "^25.7.4",
     "next": "16.1.6",
