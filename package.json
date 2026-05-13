@@ -23,7 +23,7 @@
     "eslint": "9.39.4",
     "eslint-config-next": "16.1.6",
     "i18next": "^25.10.10",
-    "next": "16.2.3",
+    "next": "16.2.6",
     "next-i18next": "^15.4.3",
     "react": "19.2.6",
     "react-bootstrap": "^2.10.10",
