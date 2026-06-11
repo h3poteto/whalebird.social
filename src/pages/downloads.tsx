@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import { Quicksand } from 'next/font/google'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useTranslation } from 'next-i18next'
+import { useTranslation } from 'react-i18next'
 import { Button, Container } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClipboard } from '@fortawesome/free-solid-svg-icons'
@@ -22,7 +21,6 @@ type ReleaseData = {
 }
 
 type Props = {
-  locale: string
   release: {
     dmg: ReleaseData | null
     rpm: ReleaseData | null
@@ -33,7 +31,7 @@ type Props = {
   }
 }
 
-export async function getStaticProps({ locale }: Props) {
+export async function getStaticProps() {
   const {
     data: { assets }
   } = await octokit.repos.getLatestRelease({
@@ -52,7 +50,6 @@ export async function getStaticProps({ locale }: Props) {
 
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common'])),
       release: {
         dmg: assetPerPlatforms.dmg
           ? {
@@ -91,8 +88,7 @@ export async function getStaticProps({ locale }: Props) {
             }
           : null
       }
-    },
-    revalidate: 60
+    }
   }
 }
 
