@@ -30,7 +30,7 @@
     "react-dom": "19.2.7",
     "react-google-recaptcha-v3": "^1.11.0",
     "react-i18next": "^16.5.5",
-    "typescript": "5.9.3"
+    "typescript": "6.0.3"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260610.1",
