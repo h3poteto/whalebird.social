@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import { Quicksand } from 'next/font/google'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useTranslation } from 'next-i18next'
+import { useTranslation } from 'react-i18next'
 import { Button, Col, Container, Row } from 'react-bootstrap'
 
 import styles from '@/styles/Home.module.css'
@@ -11,25 +10,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBell, faComments, faGlobe } from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 
 const inter = Quicksand({ subsets: ['latin'] })
 
-type Props = {
-  locale: string
-}
-
-export async function getStaticProps({ locale }: Props) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ['common']))
-    }
-  }
-}
-
 export default function Home() {
   const { t } = useTranslation()
-  const router = useRouter()
 
   return (
     <>
@@ -41,7 +26,7 @@ export default function Home() {
         <div className={styles.main}>
           <h1>{t('title')}</h1>
           <h4 style={{ padding: '2vh' }}>{t('index.short_description')}</h4>
-          <Button href={`/${router.locale}/downloads`}>{t('index.downloads')}</Button>
+          <Button href="/downloads">{t('index.downloads')}</Button>
         </div>
         <div style={{ backgroundColor: '#ececec' }}>
           <Container>

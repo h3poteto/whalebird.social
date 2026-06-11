@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { Quicksand } from "next/font/google";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "react-i18next";
 import { Container } from "react-bootstrap";
 
 import styles from "@/styles/Home.module.css";
@@ -10,18 +9,6 @@ import Link from "next/link";
 import Footer from "@/components/Footer";
 
 const inter = Quicksand({ subsets: ["latin"] });
-
-type Props = {
-  locale: string;
-};
-
-export async function getStaticProps({ locale }: Props) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ["common"])),
-    },
-  };
-}
 
 export default function PrivacyPolicy() {
   const { t } = useTranslation();
